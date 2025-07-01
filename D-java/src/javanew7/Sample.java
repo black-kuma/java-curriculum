@@ -1,4 +1,4 @@
-package kadai;
+package javanew7;
 
 public class Sample {
 
