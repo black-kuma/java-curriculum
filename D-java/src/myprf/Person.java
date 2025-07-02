@@ -17,14 +17,17 @@ public class Person {
 	}
 
 	public double bmi() {
-		return this.weight;
+//		BMI ＝ 体重kg ÷ (身長m)2
+		return this.weight / (this.height * this.height);
 
 	}
+	
+	
 
 	public void print() {
 		System.out.println("名前は" + this.name + "です。");
 		System.out.println("年は" + this.age + "才です。");
-		System.out.println("BMIは" + this.weight + "です。\n");
+		System.out.println("BMIは" + bmi() + "です。\n");
 
 	}
 }

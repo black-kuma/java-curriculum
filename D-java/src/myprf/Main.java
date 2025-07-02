@@ -7,7 +7,6 @@ public class Main {
 		System.out.println(person1.name);
 		System.out.println(person1.age);
 		System.out.println(person1.height);
-		System.out.println(person1.weight);
 		System.out.println();
 		
 		person1.print();

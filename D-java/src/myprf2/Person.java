@@ -26,7 +26,7 @@ public class Person {
 		System.out.println("年は" + this.age + "才です。");
 	}
 
-	public static void printCount() {
-		System.out.println("合計" + Person.count++ + "人です。");
+	public void printCount() {
+		System.out.println("合計" + Person.count + "人です。");
 	}
 }

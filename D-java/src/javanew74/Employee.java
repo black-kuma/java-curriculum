@@ -2,7 +2,7 @@ package javanew74;
 
 public abstract class Employee {
 
-	//変数の設定(文字列型)
+	//フィールド宣言
 	public String employeeId;
 	public String name;
 
