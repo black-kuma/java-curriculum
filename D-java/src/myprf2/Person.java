@@ -1,11 +1,14 @@
 package myprf2;
 
 public class Person {
-	public String name;
-	public int age;
-	public double height;
-	public double weight;
-	public static int count = 0;
+	//	フィールド変数
+	public String name;		 		// 名前	
+	public int age; 				// 年齢
+	public double height; 			// 身長	
+	public double weight; 			// 体重	
+	public static int count = 0;	// 人数を0で初期化
+
+	//	コンストラクタ
 
 	Person(String name, int age, double height, double weight) {
 		this.name = name;
@@ -17,7 +20,8 @@ public class Person {
 	}
 
 	public double bmi() {
-		return this.weight / this.height / this.height;
+		//		BMI ＝ 体重kg ÷ (身長m)2
+		return Math.floor(weight / (this.height * this.height));
 
 	}
 

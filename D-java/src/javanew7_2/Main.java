@@ -1,4 +1,4 @@
-package javanew72;
+package javanew7_2;
 
 public class Main {
 	public static void main(String[] args) {

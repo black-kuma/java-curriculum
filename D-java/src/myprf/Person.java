@@ -1,13 +1,13 @@
 package myprf;
 
 public class Person {
-	//	 インスタンスフィールドを定義
-	String name;
-	int age;
-	double height;
-	double weight;
+	//	フィールド変数
+	String name;		// 名前
+	int age;			// 年齢
+	double height;		// 身長
+	double weight;		// 体重
 
-	//	コンストラクタを定義し、インスタンスフィールドに値をセット
+	//	コンストラクタ
 
 	Person(String name, int age, double height, double weight) {
 		this.name = name;
@@ -18,7 +18,7 @@ public class Person {
 
 	public double bmi() {
 //		BMI ＝ 体重kg ÷ (身長m)2
-		return this.weight / (this.height * this.height);
+		return Math.floor(weight / (this.height * this.height));
 
 	}
 	

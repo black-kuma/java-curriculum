@@ -1,13 +1,14 @@
 package myprf3;
 
 public class Person {
-	public static int count = 0;
-	public String firstName;
-	public String lastName;
-	public int age;
-	public double height,weight;
+//	フィールド変数
+	public static int count = 0;		// 人数(0で初期化)
+	public String firstName;			// "姓"
+	public String lastName;				// "名"
+	public int age;						// 年齢
+	public double height,weight;		// 身長、体重
 	
-	
+//	コンストラクタ
 	Person(String firstName,String lastName, int age, double height, double weight){
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -29,7 +30,9 @@ public class Person {
 		
 	}
 	public double bmi() {
-		return this.weight/ this.height/this.height;
+//		BMI ＝ 体重kg ÷ (身長m)2
+		return Math.floor(weight / (this.height * this.height));
+
 	}
 	
 	public static void printCount() {
